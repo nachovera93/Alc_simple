@@ -1,0 +1,21 @@
+version: '3'
+services:
+    rasa:
+      container_name: "rasa_server_alc_simple"
+      user: root
+      build: 
+        context:  .
+      volumes:
+      - "./:/app"
+      - "./models:/app/models"
+      ports: 
+        - "5009:5005"
+    action_server:
+      container_name: "action_server_alc_simple"
+      build: 
+        context: actions
+      volumes:
+        - ./actions:/app/actions
+        - ./data:/app/data
+      ports:
+        - 5059:5055
