@@ -49,15 +49,15 @@ slots:
     
 responses:
   utter_out_of_scope:
-  - text: Lo siento, no entendí lo que dijiste. ¿Podrías intentarlo de nuevo?
+  - text: Lo siento, no entendí lo que dijiste. responda con un si o un no
   utter_greet:
-  - text: Hola!, Mi nombre es Sol, me comunico en este numero con {name}?.
+  - text: Hola!, Mi nombre es Sol, me comunico en este numero con {name}? responda con un si o un no.
   utter_greet_apolo:
-  - text: Disculpe, me comunico con {name}?.
+  - text: Disculpe, me comunico con {name}? responda con un si o un no.
   utter_ask_question:
-  - text: '{name}, estamos llamando de A L C por su crédito Tanner Servicios Financieros. para informarle que tiene a su disposición distintas alternativas y descuentos para el pago de su deuda. ¿Desea que lo atienda un ejecutivo para que pueda explicarle todas sus opciones y beneficios?'
+  - text: '{name}, estamos llamando de A L C por su crédito Tanner Servicios Financieros. para informarle que tiene a su disposición distintas alternativas y descuentos para el pago de su deuda. ¿Desea que lo atienda un ejecutivo para que pueda explicarle todas sus opciones y beneficios? responda con un si o un no'
   utter_ask_question_2:
-  - text: '{name}, ​¿Desea que lo atienda un ejecutivo para que pueda explicarle todas sus opciones y beneficios?​'
+  - text: '{name}, ​¿Desea que lo atienda un ejecutivo para que pueda explicarle todas sus opciones y beneficios? responda con un si o un no​'
   utter_si_paga:
   - text: Muchas gracias por su tiempo {name}. Su pago ha quedado agendado para el {fecha_pago}, que tenga un buen dia. | EXIT
   utter_default:
@@ -75,7 +75,7 @@ responses:
   utter_donde:
   - text: estamos llamando de A L C por su crédito Tanner Servicios Financieros.
   utter_donde2:
-  - text: estamos llamando de A L C por su crédito Tanner Servicios Financieros ​¿Desea que lo atienda un ejecutivo para que pueda explicarle todas sus opciones y beneficios?.
+  - text: estamos llamando de A L C por su crédito Tanner Servicios Financieros ​¿Desea que lo atienda un ejecutivo para que pueda explicarle todas sus opciones y beneficios? responda con un si o un no.
   utter_no_paga:
   - text: Muchas gracias , si cambia de opinión nos puede contactar al número 56 9 590 11 250  o nuestro whastapp + 56 9 590 11 250 | EXIT'
   utter_tranfiere:
