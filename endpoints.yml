@@ -12,6 +12,7 @@
 
 action_endpoint:
   url: "http://action_server_alc_simple:5055/webhook"
+  
 
 # Tracker store which is used to store the conversations.
 # By default the conversations are stored in memory.
