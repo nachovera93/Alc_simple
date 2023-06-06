@@ -323,7 +323,3 @@ nlu:
     - ¿Podrías decirme cuál es el monto que tengo que pagar para liquidar mi deuda?
     - ¿Cuánto tengo que pagar en total por mi deuda?
     - cuanto
-- intent: nlu_fallback
-  examples: |
-    - de que habla
-    - no se que esta hablando

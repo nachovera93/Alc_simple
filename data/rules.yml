@@ -12,8 +12,8 @@ rules:
 
   - rule: Repetir la última pregunta cuando no se entiende la respuesta
     steps:
-    - action: nlu_fallback
-    - action: utter_out_of_scope  # Agrega esta línea
+    - intent: nlu_fallback
+    - action: utter_default_repetir  # Agrega esta línea
 
 
   - rule: eres bot1?
@@ -31,20 +31,6 @@ rules:
       - action: utter_bot
       - action: utter_ask_question
 
-  - rule: eres bot3?
-    steps:
-      - action: utter_preguntar_conoce
-      - intent: eres_humano
-      - action: utter_bot
-      - action: utter_preguntar_conoce
-
-
-  - rule: eres bot8?
-    steps:
-      - action: utter_no_paga
-      - intent: eres_humano
-      - action: utter_bot
-      - action: utter_no_paga
       
  # - rule: fallback2
  #   steps:
@@ -83,18 +69,11 @@ rules:
   #    - intent: me_repite
   #    - action: utter_default
 #
-  #- rule: me repite 13
-  #  steps:
-  #    - action: utter_default_repetir
-  #    - intent: me_repite
-  #    - action: utter_default_repetir
-
   - rule: me repite 13
     steps:
-      - action: utter_disculpe_molestia
+      - action: utter_default_repetir
       - intent: me_repite
-      - action: utter_disculpe_molestia
-
+      - action: utter_default_repetir
 
   - rule: me repite 14
     steps:
@@ -102,11 +81,6 @@ rules:
       - intent: me_repite
       - action: utter_bot
 
-  - rule: me repite 14
-    steps:
-      - action: utter_no_paga
-      - intent: me_repite
-      - action: utter_no_paga
 
   - rule: me repite 14
     steps:
@@ -140,12 +114,6 @@ rules:
       - action: utter_donde
       - action: utter_greet_apolo
 
-  - rule: donde 4
-    steps:
-      - action: utter_no_paga
-      - intent: de_donde
-      - action: utter_donde
-      - action: utter_no_paga
       
 
   - rule: cuanto
@@ -162,12 +130,7 @@ rules:
       - action: utter_cuando
       - action: utter_ask_question_2
 
-   
-  - rule: despedida
-    steps:
-      - intent: despedida
-      - action: utter_despedida
-      - action: action_restart2  
+    
 
  
   
